@@ -48,8 +48,8 @@ bst_t *bst_min_val(bst_t *root)
 {
 	bst_t *min = root;
 
-	while (min->left)
-		min = min->left;
+	while (min->right)
+		min = min->right;
 
 	return (min);
 }
